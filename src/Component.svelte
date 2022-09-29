@@ -8,10 +8,12 @@
   export let step = 1
   export let roundto = 1
   export let format = false
+  export let size
 
   const { styleable } = getContext("sdk")
   const component = getContext("component")
 
+  $: sizeClass = `spectrum-Heading--size${size || "M"}`
   $: key = { initial, value, duration, step, roundto, format }
   $: {
     if (parseInt(value) < parseInt(initial)) {
@@ -35,7 +37,7 @@
   }
 </script>
 
-<div use:styleable={$component.styles}>
+<div use:styleable={$component.styles} class="spectrum-Heading {sizeClass}">
   {#key key}
   <Countup
     initial={parseInt(initial)}
@@ -47,10 +49,3 @@
 	/>
   {/key}
 </div>
-
-<style>
-	div{
-		font-variant-numeric: tabular-nums;
-		font-size: 4em;
-	}
-</style>

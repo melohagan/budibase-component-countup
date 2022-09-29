@@ -11,36 +11,74 @@
         "type": "text",
         "key": "initial",
         "label": "Starting value",
-        "default": "1"
+        "defaultValue": "1"
       },
       {
         "type": "text",
         "key": "value",
         "label": "Final value",
-        "default": "10"
+        "defaultValue": "10"
       },
       {
         "type": "number",
         "key": "duration",
         "label": "Duration ms",
-        "default": 1000
+        "defaultValue": 1000
       },
       {
         "type": "number",
         "key": "step",
         "label": "Step",
-        "default": 1
+        "defaultValue": 1
       },
       {
         "type": "number",
         "key": "roundto",
         "label": "Round to nearest",
-        "default": 1
+        "defaultValue": 1
       },
       {
         "type": "boolean",
         "key": "format",
         "label": "Include commas?"
+      },
+      {
+        "type": "select",
+        "label": "Size",
+        "key": "size",
+        "defaultValue": "XL",
+        "showInBar": true,
+        "barStyle": "picker",
+        "options": [
+          {
+            "label": "Extra Small",
+            "value": "XS"
+          },
+          {
+            "label": "Small",
+            "value": "S"
+          },
+          {
+            "label": "Medium",
+            "value": "M"
+          },
+          {
+            "label": "Large",
+            "value": "L"
+          },
+          {
+            "label": "Extra Large",
+            "value": "XL"
+          },
+          {
+            "label": "2XL",
+            "value": "XXL"
+          },
+          {
+            "label": "3XL",
+            "value": "XXXL"
+          }
+        ]
       }
     ]
   }
