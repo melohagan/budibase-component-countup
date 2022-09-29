@@ -1,0 +1,47 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "Countup",
+    "friendlyName": "Countup",
+    "description": "Headline that counts up from an initial number to a target number.",
+    "icon": "123",
+    "settings": [
+      {
+        "type": "text",
+        "key": "initial",
+        "label": "Starting value",
+        "default": "1"
+      },
+      {
+        "type": "text",
+        "key": "value",
+        "label": "Final value",
+        "default": "10"
+      },
+      {
+        "type": "number",
+        "key": "duration",
+        "label": "Duration ms",
+        "default": 1000
+      },
+      {
+        "type": "number",
+        "key": "step",
+        "label": "Step",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "key": "roundto",
+        "label": "Round to nearest",
+        "default": 1
+      },
+      {
+        "type": "boolean",
+        "key": "format",
+        "label": "Include commas?"
+      }
+    ]
+  }
+}
